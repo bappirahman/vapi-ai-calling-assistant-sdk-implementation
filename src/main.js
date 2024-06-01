@@ -1,3 +1,4 @@
+import './styles.css';
 import Vapi from "@vapi-ai/web";
 import { assistant1, assistant2, apiKey } from "../env.js";
 // import "dotenv/config";
