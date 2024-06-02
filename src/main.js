@@ -1,13 +1,9 @@
-import './styles.css';
+import "./styles.css";
 import Vapi from "@vapi-ai/web";
-import { assistant1, assistant2, apiKey } from "../env.js";
-// import "dotenv/config";
 
-
-
-
-// const apiKey=process.env.VAPI_API_KEY
-// const assistant = process.env.VAPI_ASSISTANT_ID
+const apiKey = process.env.VAPI_API_KEY;
+const assistant1 = process.env.VAPI_ASSISTANT_ID1;
+const assistant2 = process.env.VAPI_ASSISTANT_ID2;
 
 document.addEventListener("DOMContentLoaded", () => {
   const vapi1 = new Vapi(apiKey);
