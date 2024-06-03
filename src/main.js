@@ -53,14 +53,12 @@ document.addEventListener("DOMContentLoaded", () => {
       called1 = true;
     }
     colorState1 = (colorState1 + 1) % 2;
-    button1.className = ""; // Reset all classes
+    button1.className = "vapiButton"; // Reset all classes
     if (colorState1 === 1) {
       button1.classList.add("red");
-    } else if (colorState1 === 2) {
+    } else {
       button1.classList.add("blue");
     }
-
-    // No class means blue state (default state)
   });
 
   // Button 2
@@ -76,16 +74,11 @@ document.addEventListener("DOMContentLoaded", () => {
       called2 = true;
     }
     colorState2 = (colorState2 + 1) % 2;
-    button2.className = ""; // Reset all classes
+    button2.className = "vapiButton"; // Reset all classes
     if (colorState2 === 1) {
       button2.classList.add("red");
-    } else if (colorState2 === 2) {
+    } else {
       button2.classList.add("blue");
     }
-
-    // No class means blue state (default state)
   });
 });
-
-// Attach callVapi to the window object so it's accessible in the HTML
-// window.callVapi = callVapi;
